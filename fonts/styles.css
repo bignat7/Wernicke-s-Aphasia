@@ -1,0 +1,151 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: "Manifont Grotesk", sans-serif;
+  background-image: url(istockphoto-1360037845-612x612.png);
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Make sure the image covers the entire background */
+  background-position: center center; /* Position the image in the center */
+  width: 100%;
+}
+
+@font-face {
+	font-family: "Manifont Grotesk";
+	src: url("fonts/ManifontGroteskBook.otf");
+}
+
+@font-face {
+	font-family: "Portrait Regular";
+	src: url("fonts/Portrait-Regular2.otf");
+}
+
+/* Top bar styling */
+#top-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background: none;
+  position: fixed;
+  align-items: right;
+  width: 177%;
+}
+
+#start-over, #title {
+  font-size: 20px;
+  font-family: "Manifont Grotesk", monospace;
+  text-decoration: none;
+  color: white;
+}
+
+/* Main container styling */
+#main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Content box styling */
+#content-box {
+  text-align: left;
+  width: calc(100% - 500px); /* 100px margin on both sides */
+  max-width: 1200px; /* Optional: limit maximum width */
+}
+
+/* Question text styling */
+#question-text {
+  font-size: 50px;
+  font-family: "Portrait Regular", sans-serif;
+  color: white;
+  margin-bottom: 30px;
+  transition: opacity 0.5s;
+}
+
+/* Input container styling */
+.input-container {
+  display: flex;
+  gap: 10px;
+  width: 100%; /* Flexbox matches the full width of the content box */
+}
+
+/* Input box styling */
+#input-box {
+  flex: 1; /* Fills remaining space in the flex container */
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-family: "Manifont Grotesk", sans-serif;
+  transition: 0.3s;
+}
+
+/* Optional: Add some focus effects for the input */
+#input-box:focus {
+  outline: none; /* Remove default outline */
+  background-color: rgb(255, 255, 255, 0.2); /* Change background color when focused */
+  transition: 0.3s;
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
+}
+
+input {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+/* Submit button styling */
+#submit-button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Manifont Grotesk", sans-serif;
+  transition: 0.3s;
+  color: white;
+}
+
+#submit-button:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Popup box styling */
+#popup-box {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.494);
+  text-align: left;
+  padding: 20px 50px 20px 50px;
+  border-radius: 10px 10px 0 0;
+  width: calc(100% - 700px); /* 100px margin on both sides */
+  max-width: 1200px; /* Optional: limit maximum width */
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.5s; /* Fade-in transition */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Popup text styling */
+.popup-text {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: "Manifont Grotesk", sans-serif;
+}
+
+/* Popup subtext styling */
+.popup-subtext {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Portrait Regular", monospace;
+}
