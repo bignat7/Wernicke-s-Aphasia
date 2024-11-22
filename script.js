@@ -15,7 +15,7 @@ const questionTexts = [
   
   // Helper function to generate randomized words
   function randomWords(count) {
-    const words = ["morning", "good", "the", "whenever", "what", "is", "you", "apple", "jungle", "candy", "drawing", "believe", "reach", "dog", "chair", "grape", "purple", "whale", "cat"];
+    const words = ["morning", "good", "the", "whenever", "what", "is", "you", "apple", "jungle", "candy", "drawing", "believe", "reach", "dog", "chair", "grape", "purple", "whale", "cat", "desk", "lettuce", "crazy", "car"];
     return Array.from({ length: count }, () => words[Math.floor(Math.random() * words.length)]).join(" ");
   }
   
