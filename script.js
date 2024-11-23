@@ -1,8 +1,8 @@
 // Array of questions for each step
 const questionTexts = [
     "What is your name?",
-    "Ok… How are you doing?",
-    "... What are your hobbies?",
+    "Um... How are you doing?",
+    "Ok... What are your hobbies?",
     "Can you repeat what you said? I didn’t understand you.",
     "What?",
     "Um..."
