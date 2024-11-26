@@ -149,3 +149,108 @@ input::placeholder {
   font-weight: normal;
   font-family: "Portrait Regular", monospace;
 }
+
+
+@media (max-width: 768px) {
+  /* Body adjustments */
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Top bar styling */
+  #top-bar {
+    grid-template-columns: 1fr; /* Stack elements vertically */
+    text-align: center; /* Center align for a cleaner mobile look */
+    padding: 10px;
+    width: 100%; /* Adjust to screen width */
+  }
+
+  #start-over, #title {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  /* Main container adjustments */
+  #main-container {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow content to dictate height */
+    padding: 20px; /* Add padding around the edges */
+  }
+
+  /* Content box adjustments */
+  #content-box {
+    width: 100%; /* Full width for smaller screens */
+    padding: 0 15px; /* Add padding for better spacing */
+  }
+
+  /* Question text styling */
+  #question-text {
+    font-size: 30px; /* Reduce font size */
+    margin-bottom: 20px;
+  }
+
+  /* Input container adjustments */
+  .input-container {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 15px;
+  }
+
+  /* Input box styling */
+  #input-box {
+    font-size: 18px; /* Adjust font size */
+    padding: 8px; /* Reduce padding */
+  }
+
+  /* Submit button styling */
+  #submit-button {
+    font-size: 18px; /* Adjust font size */
+    padding: 8px 15px; /* Adjust padding */
+  }
+
+  /* Popup box adjustments */
+  #popup-box {
+    width: calc(100% - 30px); /* Adjust width to fit screen with margins */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .popup-text {
+    font-size: 20px; /* Reduce font size */
+  }
+
+  .popup-subtext {
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* Adjustments for very small screens (e.g., 480px or less) */
+@media (max-width: 480px) {
+  /* Question text styling */
+  #question-text {
+    font-size: 24px; /* Further reduce font size */
+  }
+
+  /* Input box styling */
+  #input-box {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  /* Submit button styling */
+  #submit-button {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  /* Popup box adjustments */
+  #popup-box {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .popup-text {
+    font-size: 18px; /* Further reduce font size */
+  }
+
+  .popup-subtext {
+    font-size: 12px; /* Adjust font size */
+  }
+}
