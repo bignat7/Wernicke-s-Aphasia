@@ -1,12 +1,13 @@
 /* General body styling */
 body {
   margin: 0;
-  font-family: "Manifont Grotesk", sans-serif;
-  background-image: url(istockphoto-1360037845-612x612.png);
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  background-size: cover; /* Make sure the image covers the entire background */
-  background-position: center center; /* Position the image in the center */
+  background-image: url('istockphoto-1360037845-612x612.png');
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-size: cover; /* Ensure the image fills the screen */
+  background-position: center; /* Center the image */
   width: 100%;
+  height: 100vh; /* Set the height to fill the viewport */
+  overflow: hidden; /* Hide any overflow */
 }
 
 @font-face {
@@ -150,8 +151,84 @@ input::placeholder {
   font-family: "Portrait Regular", monospace;
 }
 
+@media (min-width: 701px) and (max-width: 900px) {
+  body {
+    margin: 0;
+    background-image: url('istockphoto-1360037845-612x612.png');
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-size: cover; /* Ensure the image fills the screen */
+    background-position: center; /* Center the image */
+    width: 100%;
+    height: 100vh; /* Set the height to fill the viewport */
+    overflow: hidden; /* Hide any overflow */
+  }
 
-@media (max-width: 600px) {
+  /* Top bar styling */
+  #top-bar {
+    grid-template-columns: 1fr 1fr; /* Keep two columns but adjust spacing */
+    text-align: center;
+    padding: 15px; /* Reduce padding */
+    width: 100%; /* Fit screen width */
+  }
+
+  #start-over, #title {
+    font-size: 20px; /* Slightly smaller font size */
+  }
+
+  /* Main container adjustments */
+  #main-container {
+    flex-direction: column; /* Stack elements vertically if needed */
+    height: auto; /* Allow content to dictate height */
+    padding: 30px; /* Add padding for a comfortable layout */
+  }
+
+  /* Content box adjustments */
+  #content-box {
+    width: 90%; /* Take up more width */
+    max-width: 900px; /* Limit max width */
+    padding: 0 20px; /* Add inner spacing */
+  }
+
+  /* Question text styling */
+  #question-text {
+    font-size: 40px; /* Slightly smaller font size */
+    margin-bottom: 25px;
+  }
+
+  /* Input container adjustments */
+  .input-container {
+    flex-direction: row; /* Keep elements side by side */
+    gap: 10px;
+  }
+
+  /* Input box styling */
+  #input-box {
+    font-size: 18px; /* Adjust font size for tablets */
+    padding: 10px;
+  }
+
+  /* Submit button styling */
+  #submit-button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  /* Popup box adjustments */
+  #popup-box {
+    width: calc(100% - 60px); /* Adjust width for tablet screens */
+    padding: 20px; /* Slightly smaller padding */
+  }
+
+  .popup-text {
+    font-size: 25px; /* Adjust font size */
+  }
+
+  .popup-subtext {
+    font-size: 14px; /* Adjust subtext size */
+  }
+}
+
+@media (max-width: 700px) {
   /* Body adjustments */
   body {
     background-size: cover;
@@ -224,6 +301,18 @@ input::placeholder {
 
 /* Adjustments for very small screens (e.g., 480px or less) */
 @media (max-width: 480px) {
+
+  body {
+    margin: 0;
+    background-image: url('istockphoto-1360037845-612x612.png');
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-size: cover; /* Ensure the image fills the screen */
+    background-position: center; /* Center the image */
+    width: 100%;
+    height: 100vh; /* Set the height to fill the viewport */
+    overflow: hidden; /* Hide any overflow */
+  }
+
   /* Question text styling */
   #question-text {
     font-size: 24px; /* Further reduce font size */
