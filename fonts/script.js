@@ -1,8 +1,8 @@
 // Array of questions for each step
 const questionTexts = [
     "What is your name?",
-    "Ok… How are you doing?",
-    "... What are your hobbies?",
+    "Um... How are you doing?",
+    "Ok... What are your hobbies?",
     "Can you repeat what you said? I didn’t understand you.",
     "What?",
     "Um..."
@@ -15,7 +15,7 @@ const questionTexts = [
   
   // Helper function to generate randomized words
   function randomWords(count) {
-    const words = ["morning", "good", "the", "whenever", "what", "is", "you", "apple", "jungle", "candy", "drawing", "believe", "reach", "dog", "chair"];
+    const words = ["morning", "good", "the", "whenever", "what", "is", "you", "apple", "jungle", "candy", "drawing", "believe", "reach", "dog", "chair", "grape", "purple", "whale", "cat", "desk", "lettuce", "crazy", "car"];
     return Array.from({ length: count }, () => words[Math.floor(Math.random() * words.length)]).join(" ");
   }
   
